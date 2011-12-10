@@ -15,7 +15,7 @@ include_once("include/User_shared.php");
 <head>
 <title>CleverTrail</title>
 <meta charset="UTF-8" />
-<meta name="description" content="A non-profit project to help hikers and outdoor enthusiasts find, add, and edit community created articles on the internet's largest trail wiki."/>
+<meta name="description" content="A non-profit and open-source project to help hikers and outdoor enthusiasts find, add, and edit community created articles on the internet's largest trail wiki."/>
 <meta property="og:title" content="CleverTrail" /> 	
 <meta property="og:type" content="website" /> 
 <meta property="og:url" content="http://clevertrail.com" /> 
@@ -23,7 +23,7 @@ include_once("include/User_shared.php");
 <meta property="og:site_name" content="CleverTrail" /> 
 <meta property="og:locale" content="en_US" /> 
 <meta property="fb:admins" content="1217047" /> 
-<meta property="og:description" content="A non-profit project to help hikers and outdoor enthusiasts find, add, and edit community created articles on the internet's largest trail wiki." /> 
+<meta property="og:description" content="A non-profit and open-source project to help hikers and outdoor enthusiasts find, add, and edit community created articles on the internet's largest trail wiki." /> 
 <?php
 	drawCommonHeader(true, false);
 ?>
