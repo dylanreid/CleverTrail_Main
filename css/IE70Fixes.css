@@ -1,0 +1,116 @@
+/* 7.0 - only fixes */
+/* content area */
+/* workaround for various ie float bugs */
+
+/* content column: actions, content, etc */
+div#divContentColumn {
+	width: 100%;
+	float: right;
+	margin-top: 10px;
+	padding-top: 50px;
+}
+
+/* the actual content of an article */
+div#divContent {
+	width: 83%;
+	border-right: 1px solid #aaa;
+}
+
+.rtl div#divSideColumn {
+	/* For some reason it tries to inherit the padding-top into every div,
+	 * and I can't figure out how to get it back off.
+	 * Margin works correctly for this use, though.
+	 */
+	padding-top: 0;
+	margin-top: 160px;
+}
+
+.rtl #bodyContent a.external {
+	background-image: url(external-rtl.png);
+	padding: 0 13px 0 0;
+}
+
+.rtl a.feedlink {
+	background-position: right;
+	padding-right: 0;
+	padding-left: 16px;
+}
+/* the tabs */
+
+#divActions {
+	z-index: 3;
+	top: 39px;
+}
+
+#divActions li {
+	padding-bottom: 0 !important;
+	border: none;
+	background-color: transparent;
+	cursor: default;
+	float: none !important;
+}
+
+#divActions li a {
+	display: inline-block !important;
+	vertical-align: top;
+	padding-bottom: 0;
+	border: solid #aaa;
+	border-width: 1px 1px 0;
+}
+#divActions li.selected a {
+	border-color: #fabd23;
+	padding-bottom: 0.17em;
+}
+#divActions li a:hover {
+	padding-bottom: 0.17em;
+}
+#p-navigation a {
+	display: inline-block;
+	width: 100%;
+}
+#portal-personaltools {
+	padding-bottom: 0.1em;
+}
+textarea {
+	width: 96%;
+}
+
+div#divFooter li {
+	/* Work around bug with inline <li> tags with right margins and nowrap */
+	margin-right: 0;
+}
+
+div#divToolbar{
+	z-index: 10;
+}
+
+#btnAddTrailInput{
+	margin-top:1px;
+}
+
+#btnTrailSearchInput{
+	margin-top:1px;
+	border-left: 1px solid #642200;
+}
+
+#txtTrailSearchInput{
+	margin-top:0px;
+}
+
+/* edit trail */
+#btnEditTrailSaveGoToTrail{
+	width: 130px;
+}
+
+#btnEditTrailSaveContinue{
+	width: 160px;
+}
+
+#btnEditTrailCancel{
+	width: 70px;
+}
+#btnEditTrailSectionPhotoGalleryAddImage{
+	border-left: 1px solid #642200;
+}
+/* end edit trail stuff */
+

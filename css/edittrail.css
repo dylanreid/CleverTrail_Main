@@ -1,0 +1,301 @@
+/* Copyright 2011 CleverTrail.com.  All Rights Reserved. */
+
+.clsEditTrailSectionLinkButton {
+    cursor:pointer;  
+	padding: 0 10px 0 10px;
+    font-size:12px; 
+	font-family: trebuchet ms, arial;
+    color: #333;  
+    background: #E9F0EC; 
+    border: 1px solid #777; 
+	border-radius: 3px;
+}
+
+.clsEditTrailSectionLinkButtonSelected {
+    cursor:pointer;  
+	padding: 0 10px 0 10px;
+    font-size:12px; 
+	font-family: trebuchet ms, arial;
+    color: #fff;  
+    background: #642200; 
+    border: 1px solid #555555; 
+	border-radius: 3px;
+}
+
+#divEditTrailSectionLink {	
+	font-family: Trebuchet MS, Arial;
+    font-size: 12px;
+	color: #fff;
+    background: #fff;
+	width: 190px;
+    border: 0;
+}
+
+#divEditTrailSectionLink ul {
+	list-style: none;
+}
+
+#divEditTrailSectionLink li {
+	cursor: pointer;
+}
+
+#divEditTrailSectionLink A:link {text-decoration: none; color: #fff; }
+#divEditTrailSectionLink A:visited {text-decoration: none; color: #fff;}
+#divEditTrailSectionLink A:hover {text-decoration: underline; color: #fff;}
+
+#divArticleOptions {
+	font-size:12px; 
+	font-family: trebuchet ms, arial;
+    color: #333;  
+    background: #E9F0EC; 
+    border: 1px solid #777; 
+	border-radius: 3px;
+	text-align:right;
+	padding: 4px;
+}
+
+#divHelpfulTips {
+	font-size:12px; 
+	font-family: trebuchet ms, arial;
+    color: #333;  
+    background: #E9F0EC; 
+    border: 1px solid #777; 
+	border-radius: 3px;
+	padding: 4px;
+	width: 220px;
+	text-align:left;
+}
+
+.clsEditTrailHelpfulTips {
+	font-size: 10pt;
+}
+
+#divEditTrailHelpfulTipsRedirect {
+	font-size: 10pt;
+	font-family: trebuchet ms, arial;
+    color: #333;  
+    background: #E9F0EC; 
+    border: 1px solid #777; 
+	border-radius: 3px;
+	text-align:left;
+}
+
+.clsEditTrailSectionInput {
+	height: 350px;
+	padding: 3px;
+	font-family: courier new;
+	font-size: 10pt;
+	resize: none;
+	border: 1px solid #888;
+	border-radius: 3px;
+}
+
+.clsEditTrailSectionContent {
+	/*position: absolute;*/
+	 font-family: Trebuchet MS, arial, sans-serif;
+	font-size: 10pt;
+}
+
+.clsEditTrailContentHeader {
+	font-size:90%;
+	text-align:left;
+}
+
+#divEditTrailNotice {
+	display: none;
+	font-size:12px; 
+	font-family: trebuchet ms, arial;
+    color: #333;  
+	font-weight: bold;
+	padding: 3px;
+    background: #E9F0EC; 
+    border: 1px solid #777; 
+	border-radius: 3px;
+	text-align:left;
+	margin-left: 50px;
+}
+
+.clsEditTrailPhotoGalleryImage {
+	position: float;
+	background:  #D1CEC3;
+	width: 0px;
+	height: 0px;
+}
+
+#txtEditTrailSectionPhotoGalleryAddImage{
+	width: 180px;
+	color: #333;
+	margin: 0px;
+	height: 24px;  
+	line-height: 24px;
+	padding: 0 10px 0 10px;	
+	font-family: trebuchet ms, arial, century gothic;	  
+	text-align: left;	
+	border: 1px solid #642200; 
+	border-right: 0px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#btnEditTrailSectionPhotoGalleryAddImage{
+	background: url(http://clevertrail.com/images/icons/icon-add-brown25.png) no-repeat #642200 center;
+	margin: 0px;
+	padding: 0 2px 3px 0;
+	color: #fff;
+	height: 26px;
+	width: 27px;
+	font-family: trebuchet ms, arial;
+	border: 1px solid #642200;
+	border-left: 0px;
+	cursor: pointer;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+#txtEditTrailSectionCategoriesAdd{
+	width: 180px;
+	color: #333;
+	margin: 0px;
+	height: 24px;  
+	line-height: 24px;
+	padding: 0 10px 0 10px;	
+	font-family: trebuchet ms, arial, century gothic;	  
+	text-align: left;	
+	border: 1px solid #642200; 
+	border-right: 0px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#btnEditTrailSectionCategoriesAdd{
+	background: url(http://clevertrail.com/images/icons/icon-add-brown25.png) no-repeat #642200 center;
+	margin: 0px;
+	padding: 0 2px 3px 0;
+	color: #fff;
+	height: 26px;
+	width: 27px;
+	font-family: trebuchet ms, arial;
+	border: 1px solid #642200;
+	border-left: 0px;
+	cursor: pointer;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+/* this is for the up/down/delete buttons for the photo gallery and categories */
+.clsEditTrailListBoxButton{
+	margin: 0px;
+	color: #fff;
+	height: 27px;
+	width: 27px;
+	border: 1px solid #642200;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+#divEditTrailGoogleMap {
+	width:100%; 
+	height:100%;
+	z-index:1;
+	margin-top: -25px;
+}
+
+#divEditTrailGoogleMapSearch {
+	position: relative;
+	top: 370px;
+	left: 5px;
+	z-index: 5;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#divEditTrailGoogleMapMarkerEditor {
+	z-index: 10;
+	background: #fff;
+	color: #333;
+	font-family: trebuchet ms;
+	font-size: 95%;
+	padding: 10px;
+	border-radius: 4px;
+	border: #642200 2px solid;
+	display: none;
+	position: absolute;
+	top: 200px;
+	left: 30%;
+	text-align: left;
+}
+
+#txtGoogleMapMarkerDescription {
+	resize: none;
+	width: 100%;
+}
+
+#txtEditTrailGoogleMapSearch {
+	color: #777;
+	margin: 0px;
+	height: 24px;
+	line-height: 24px;
+	width: 220px;
+	margin-top: 1px;	  
+	padding: 0 10px 0 10px;	
+	font-family: trebuchet ms, arial, century gothic;	  
+	text-align: left;	
+	border: 1px solid #333; 
+	border-right: 0px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#btnEditTrailGoogleMapSearch {
+	margin: 0px;
+	margin-top: 1px;
+	padding: 0 2px 3px 0;
+	background: #642200;
+	color: #fff;
+	height: 26px;
+	width: 27px;
+	font-family: trebuchet ms, arial;
+	border: 1px solid #333;
+	border-left: 0px;
+	cursor: pointer;
+	background: url(http://clevertrail.com/images/icons/icon-search-brown-25.png) no-repeat #642200 center;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+#btnEditTrailSectionCategoriesDelete{
+	background: url(http://clevertrail.com/images/icons/icon-delete-brown25.png) no-repeat #642200 center;
+}
+
+#btnEditTrailSectionCategoriesUp{
+	background: url(http://clevertrail.com/images/icons/icon-up-brown25.png) no-repeat #642200 center;
+}
+
+#btnEditTrailSectionCategoriesDown{
+	background: url(http://clevertrail.com/images/icons/icon-down-brown25.png) no-repeat #642200 center;
+}
+
+#btnEditTrailSectionPhotoGalleryDelete{
+	background: url(http://clevertrail.com/images/icons/icon-delete-brown25.png) no-repeat #642200 center;
+}
+
+#btnEditTrailSectionPhotoGalleryUp{
+	background: url(http://clevertrail.com/images/icons/icon-up-brown25.png) no-repeat #642200 center;
+}
+
+#btnEditTrailSectionPhotoGalleryDown{
+	background: url(http://clevertrail.com/images/icons/icon-down-brown25.png) no-repeat #642200 center;
+}
