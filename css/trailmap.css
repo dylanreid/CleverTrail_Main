@@ -1,17 +1,17 @@
 /* Copyright 2011 CleverTrail.com.  All Rights Reserved. */
 
 #divHomepageSearchMap {
-	top: 530px;
+	top: 528px;
 	left: 160px;
 }
 
 #divCategorySearchMap {
-	top: 442px;
+	top: 430px;
 	left: 20px;
 }
 
 #divUserSearchMap {	
-	top: 445px;
+	top: 433px;
 	left: 20px;	
 }
 
@@ -23,12 +23,13 @@
 #txtSearchMap {
 	color: #777;
 	margin: 0px;
-	height: 24px;
-	line-height: 24px;
-	width: 220px;
+	height: 36px;
+	line-height: 36px;
+	width: 250px;
 	margin-top: 1px;	  
 	padding: 0 10px 0 10px;	
 	font-family: trebuchet ms, arial, century gothic;	  
+	font-size:120%;
 	text-align: left;	
 	border: 1px solid #333; 
 	border-right: 0px;
@@ -44,9 +45,8 @@
 	padding: 0 2px 3px 0;
 	background: #642200;
 	color: #fff;
-	height: 26px;
-	width: 27px;
-	font-family: trebuchet ms, arial;
+	height: 38px;
+	width: 40px;
 	border: 1px solid #333;
 	border-left: 0px;
 	cursor: pointer;
@@ -58,17 +58,17 @@
 }
 
 #divFilterHomepageTrailMap {
-	top: 293px;
+	top: 303px;
 	right: 10px;
 }
 
 #divFilterCategoryTrailMap {
-	top: 160px;
+	top: 170px;
 	right: 15px;
 }
 
 #divFilterUserTrailMap {
-	top: 160px;
+	top: 170px;
 	right: 15px;
 }
 
@@ -85,19 +85,31 @@
 }
 
 #divHomepageTrailMap {
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-left: 145px;
 	height: 500px;
+		border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 #divCategoryTrailMap {
 	margin-top: -20px;
 	margin-left: 0px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 #divUserTrailMap {
 	margin-top: -20px;
 	margin-left: 0px;	
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;	
 }
 
 .clsTrailMap {
@@ -109,7 +121,7 @@
 
 
 #divHomepageTrailMapLoading {
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-left: 145px;
 	height: 500px;
 }
@@ -160,7 +172,7 @@
 }
 
 #divFilterHomepageTrailMapExpand{
-	top: 525px;
+	top: 535px;
 	right: 10px;	
 }
 

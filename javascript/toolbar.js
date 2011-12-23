@@ -3,6 +3,14 @@
 var imgLoadCircle = new Image();
 imgLoadCircle.src = "http://clevertrail.com/images/load_circle.gif";
 
+var imgAddTrail = new Image();
+imgAddTrail.src = "http://clevertrail.com/images/add-trail-button.png";
+var imgAddTrailHover = new Image();
+imgAddTrailHover.src = "http://clevertrail.com/images/add-trail-button-hover.png";
+
+var imgIconGo = new Image();
+imgIconGo.src = "http://clevertrail.com/images/icons/icon-go-brown25.png";
+
 function addTrailIfEnter(e){
 	var c = document.all? event.keyCode : e.which;
     if(c == 13) 
@@ -47,7 +55,7 @@ $('#txtTrailSearchInput').live('focus', function () {
 });
 
 //toggle visibility of add trail input
-$('#divAddTrail').live('click', function() {
+$('#imgAddTrail').live('click', function() {
 	$('#divAddTrailInput').toggle();
 	$('#txtAddTrailInput').focus();		
 });
@@ -106,6 +114,13 @@ $('#ulUserActionsDropDown > li').live('mouseover', function() {
 });
 $('#ulUserActionsDropDown > li').live('mouseout', function() {
 	$(this).css('background', '#777');
+});
+
+$('#imgAddTrail').live('mouseover', function() {
+	$('#imgAddTrail').attr('src', imgAddTrailHover.src);
+});
+$('#imgAddTrail').live('mouseout', function() {
+	$('#imgAddTrail').attr('src', imgAddTrail.src);
 });
 
 $(document).ready(function() {

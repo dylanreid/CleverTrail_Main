@@ -10,7 +10,7 @@
 	margin: 0;
 	z-index: 5;
 	width: 100%;
-	height: 28px;
+	height: 40px;
 	white-space: nowrap;	
 	vertical-align: middle;
 	border-style: solid;
@@ -26,10 +26,10 @@
 	top: 0px;
 	left: 0px;
 	padding: 0px;
-	margin-left: 20px;
+	margin-left: 2px;
 	width: 100px;
-	height: 28px;
-	line-height: 28px;
+	height: 40px;
+	line-height: 40px;
 	text-align: center;
 	vertical-align: top;
 	margin-top:-1px;
@@ -43,20 +43,21 @@
 	top: 0px;
 	left: 0px;	
 	padding: 0px;
-	margin-left: 165px;
+	margin-left: 185px;
 	z-index: 3;
-	height: 28px;
+	height: 40px;
 }
 
 #txtTrailSearchInput {
 	color: #777;
 	margin: 0px;
-	height: 24px;
-	line-height: 24px;
-	width: 220px;
+	height: 36px;
+	line-height: 36px;
+	width: 260px;
 	margin-top: 1px;	  
 	padding: 0 10px 0 10px;	
-	font-family: trebuchet ms, arial, century gothic;	  
+	font-family: trebuchet ms, arial, century gothic;
+	font-size: 130%;
 	text-align: left;	
 	border: 1px solid #aaa; 
 	border-right: 0px;
@@ -72,8 +73,8 @@
 	padding: 0 2px 3px 0;
 	background: #642200;
 	color: #fff;
-	height: 26px;
-	width: 27px;
+	height: 38px;
+	width: 40px;
 	font-family: trebuchet ms, arial;
 	border: 1px solid #aaa;
 	border-left: 0px;
@@ -86,31 +87,18 @@
 }
 
 /* adding a trail */
-#divAddTrail {
+#imgAddTrail {
 	margin-top: 1px;
 	position: absolute;
-	margin-left: 450px;
-	background: #642200;
-	color: #fff;
-	border: 1px solid #aaa;
-	line-height: 24px;
-	vertical-align: middle;
+	margin-left: 520px;
 	cursor: pointer;
-	padding-right: 10px;
-	padding-left: 5px;
-	border-radius: 3px;
-}
-
-#aAddTrail {
-	color: #fff;
-	text-decoration: none;
 }
 
 #divAddTrailInput {	
 	display: none;
 	position: absolute;
-	margin-top: 30px;
-	margin-left: 450px;
+	margin-top: 42px;
+	margin-left: 520px;
 	padding: 0px;
 }
 
@@ -118,11 +106,12 @@
 	margin: 0px;
 	padding: 0 10px 0 10px;	
 	border: 1px solid #642200;
+	font-size:120%;
 	border-right: 0px;
 	color: #666;
 	width: 200px;	
-	height: 24px;
-	line-height: 24px;
+	height: 36px;
+	line-height: 36px;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
 	border-top-right-radius: 0px;
@@ -134,8 +123,8 @@
 	padding-right: 4px;
 	background: #642200;
 	color: #fff;
-	height: 26px;
-	width: 26px;
+	height: 38px;
+	width: 38px;
 	font-family: trebuchet ms, arial;
 	border: 1px solid #642200;
 	cursor: pointer;
@@ -148,11 +137,16 @@
 
 /* the user action area: my watchlist, contributions, login, etc */
 #divUserActions {	
-	line-height: 28px;
 	position: absolute;
 	right: 30px;
+	padding: 0px;
+	height: 40px;
+	/*line-height: 40px;*/
 	text-align: right;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
+	padding-top:5px;
+	color: white;
+	font-size:120%;
 }
 
 #divUserActions a.new {color: #ffaa88;}
@@ -170,7 +164,7 @@
 #imgUserActionsDropDown {
 	cursor: pointer;
 	margin-right: 1px;
-	height: 24px;
+	height: 36px;
 }
 
 #ulUserActionsDropDown {
@@ -179,7 +173,7 @@
 	margin: 0px;
 	width: 175px;	
 	border: 1px solid #222; 
-	line-height: 28px;
+	line-height: 40px;
 	text-align: right;
 	list-style: none;
 	list-style-image: none;
@@ -350,6 +344,7 @@
 	float: left;
 	clear: left;
 	width: 100%;
+	font-size:120%;
 }
 .ui-menu .ui-menu-item a {	
 	cursor: pointer;

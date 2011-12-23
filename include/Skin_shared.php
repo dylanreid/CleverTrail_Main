@@ -80,9 +80,8 @@ function drawToolBar($userName, $personalUrls, $searchTerm, $numTrailsFinished) 
 		<input type="hidden" id="txtScriptPath" name="txtScriptPath" value="<?php echo $wgScriptOfWiki; ?>">
 		
 		<div id="divCleverTrailLogo">
-			<a style="color: #fff" href="<?php echo $wgMainServer; ?>">
-			<img id="imgCleverTrailLogo" src="http://clevertrail.com/images/upperleftlogo.jpg"></a>&nbsp;&nbsp;&nbsp;
-			<a style="color: #fff" href="<?php echo $wgMainServer; ?>">CleverTrail</a>
+			<a href="<?php echo $wgMainServer; ?>">
+			<img id="imgCleverTrailLogo" src="http://clevertrail.com/images/logo-40px-white-on-grey.png" height="40px"></a>
 		</div>
 		<div id="divTrailSearch">		
 			<form action="<?php echo $wgScriptOfWiki ?>" id="searchform">
@@ -100,10 +99,8 @@ function drawToolBar($userName, $personalUrls, $searchTerm, $numTrailsFinished) 
 			</form>			
 		</div>
 		
-		<div id="divAddTrail" title="Add A Trail">
-			<img id="imgAddTrail" src="http://clevertrail.com/images/icons/add_article.png"> 
-			<a id="aAddTrail">add trail</a>			
-		</div>
+		<img id="imgAddTrail" src="http://clevertrail.com/images/add-trail-button.png"> 
+			
 		<div id="divAddTrailInput">		
 			<table border=0 cellspacing=0 cellpadding=0><tr><td valign=top>
 			<input id="txtAddTrailInput" type="input" name="txtAddTrailInput" onkeypress="addTrailIfEnter(event);">		
@@ -119,7 +116,6 @@ function drawToolBar($userName, $personalUrls, $searchTerm, $numTrailsFinished) 
 				<?php echo drawHikerTitle($numTrailsFinished, 24, false, false, false); ?>&nbsp;
 				<a id="aUserActionsUserName"><?php echo $userName ?></a>
 				<img id="imgUserActionsDropDown" src="http://clevertrail.com/images/icons/ico-dropdown25.png">
-				
 				<br>
 				<ul id="ulUserActionsDropDown">
 				<?php foreach($personalUrls as $key => $item) {

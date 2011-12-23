@@ -62,9 +62,12 @@ function createJSONResponseFromCTA($name, $cta){
 
 function createGalleryPhotos($cta){
 	$photos = array();
-	for ($i = 0; $i < sizeof($cta->arPhotos); $i++){
-		$photo = $cta->arPhotos[$i];
-		$photo = getImagePath($photo, 120);
+	for ($i = 0; $i < sizeof($cta->arPhotos); $i++){		
+		$photoPath120 = getImagePath($cta->arPhotos[$i], 120);				
+		$photoPath = getImagePath($cta->arPhotos[$i]);				
+		$photo = array();
+		$photo[] = $photoPath;
+		$photo[] = $photoPath120;
 		$photos[] = $photo;
 	}
 	

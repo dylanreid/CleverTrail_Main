@@ -17,7 +17,7 @@
 #divSideColumn {
 	position: absolute;
 	left: 0px;
-	top: 30px;
+	top: 40px;
 	width: 140px;
 	padding-top: 30px;
 }
@@ -33,7 +33,7 @@
 
 /* the actual content of an article */
 #divContent {
-	margin: 50px 0 0 145px;
+	margin: 60px 0 0 145px;
 	padding-left: 5px;
 	padding-bottom: 5px;
 	padding: 10px;
@@ -44,13 +44,15 @@
 	border-right: none;
 	line-height: 1.5em;
 	background: #ffffff;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 /* content related actions: create, edit, talk, etc */
 #divActions {
 	position: absolute;
 	/*top: 1.3em;*/
-	top: 38px;
+	top: 48px;
 	left: 130px;
 	margin: 0;
 	white-space: nowrap;
@@ -125,6 +127,8 @@
 	border: 1px solid #222;
 	padding: 5px .8em 5px .5em;
 	background: #555;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 #divNavigator A:link {text-decoration: none; color: #ffffff; }
@@ -865,6 +869,11 @@ li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
 	text-align: center;
 	font-size: 90%;
 	background: #fff;
+	
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
 }
 #divFooter li {
 	display: inline;
