@@ -19,7 +19,7 @@ function createJSONResponseFromCTA($name, $cta){
 		$referencedPhotos = createReferencedPhotos($cta);
 		$galleryPhotos = createGalleryPhotos($cta);
 		
-		$sImage = getImagePath($cta->sImage, 120);
+		$sImage = getImagePath($cta->sImage, 300);
 		$sImageCredit = $cta->sImageCredit;
 		$sDifficulty = $cta->getDifficultyWikitext();
 		$sDistance = $cta->getDistanceWikitext();

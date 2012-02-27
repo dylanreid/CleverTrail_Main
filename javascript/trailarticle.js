@@ -11,14 +11,14 @@ imgGreenCheckmark4.src = "http://clevertrail.com/images/icons/finished_trail_che
 var sTrailName = "";
 var bTrailFinished = false;
 
-$('#divCompleteTrail').live('click', function() {
+$('#imgCompleteTrail').live('click', function() {
 	if (wgUserName == '') {
 		window.location = wgServer + "/trails/index.php?title=Special:UserLogin&returnto=" + sTrailName;
 		return;
 	}
 		
-	$('#divCompleteTrail').hide();
-	$('#divCompleteTrailLoading').show();
+	$('#imgCompleteTrail').hide();
+	$('#imgCompleteTrailLoading').show();
 	
 	var postData = "trailName=" + sTrailName;
 	var postUrl = wgServer + "/ajax/handleMarkCompleteTrail.php";
@@ -36,11 +36,9 @@ $('#divCompleteTrail').live('click', function() {
 		success: function(response){
 			
 			if (response.returnValue == 0){
-				$('#divCompleteTrail').css('background', '#864422');
 				$('#imgCompleteTrail').attr('src', "http://clevertrail.com/images/icons/finished_trail_check.png");
 				bTrailFinished = true;
 			} else if (response.returnValue == 1){
-				$('#divCompleteTrail').css('background', '#642200');
 				$('#imgCompleteTrail').attr('src', "http://clevertrail.com/images/icons/unfinished_trail.png");
 				bTrailFinished = false;
 			} else if (response.returnValue == 2) {
@@ -54,8 +52,8 @@ $('#divCompleteTrail').live('click', function() {
 		},
 		complete: function()
 		{
-			$('#divCompleteTrail').show();
-			$('#divCompleteTrailLoading').hide();
+			$('#imgCompleteTrail').show();
+			$('#imgCompleteTrailLoading').hide();
 		},
 		error: function (data, status, e)
 		{
@@ -65,22 +63,18 @@ $('#divCompleteTrail').live('click', function() {
 	});			
 });
 
-$('#divCompleteTrail').live('mouseover', function() {
+$('#imgCompleteTrail').live('mouseover', function() {
 	if (bTrailFinished) {
-		$('#divCompleteTrail').css('background', '#864422');
 		$('#imgCompleteTrail').attr('src', "http://clevertrail.com/images/icons/finished_trail_x.png");
 	} else { 
-		$('#divCompleteTrail').css('background', '#864422');
 		$('#imgCompleteTrail').attr('src', "http://clevertrail.com/images/icons/finished_trail_check.png");
 	}
 });
 
-$('#divCompleteTrail').live('mouseout', function() {
+$('#imgCompleteTrail').live('mouseout', function() {
 	if (bTrailFinished) {
-		$('#divCompleteTrail').css('background', '#864422');
 		$('#imgCompleteTrail').attr('src', "http://clevertrail.com/images/icons/finished_trail_check.png");
 	} else {
-		$('#divCompleteTrail').css('background', '#642200');
 		$('#imgCompleteTrail').attr('src', "http://clevertrail.com/images/icons/unfinished_trail.png");
 	}
 		

@@ -22,15 +22,24 @@ var pageName = "";
 var maxZoomLevel = 14;
 
 function createTrailMap() {
-	myZoom = 2;
-				
 	//geocoder
 	myGeocoder = new google.maps.Geocoder();
 	
+	//defaults
+	defaultLat = 12.8597277;
+	defaultLong = 3.1938125;
+	defaultZoom = 2;
+	
+	if (prefix == "Homepage"){
+		defaultLat = 37.2694556963996;
+		defaultLong = -95.50735937499994;
+		defaultZoom = 4;
+	}
+	
 	//map options
     var myOptions = {
-		zoom: myZoom,
-		center: new google.maps.LatLng(12.8597277, 3.1938125), //default center of the world
+		zoom: defaultZoom,
+		center: new google.maps.LatLng(defaultLat, defaultLong), //default center of the world
 		disableDoubleClickZoom: false,
 		streetViewControl: false,
 		disableDefaultUI: true,
@@ -93,6 +102,7 @@ function checkToDisplayMapLoading() {
 		$('#div' + prefix + 'TrailMapLoading').css('display', 'block');
 		
 	}
+	
 }
 
 function createTrailMapMarkers(){

@@ -18,7 +18,6 @@ function getPathOfFileName(fileName, thumbSize){
 			filePath = 'http://clevertrail.com/trails/images/thumb/' + firstDir + '/' + secondDir + '/' +fileName + '/' + thumbSize + 'px-' + fileName;				
 	}
 	
-	alert (fileName + ", " + filePath);
 	return filePath;
 }
 

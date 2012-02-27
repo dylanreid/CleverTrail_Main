@@ -186,15 +186,15 @@ class CleverTrailTemplate extends QuickTemplate {
 				</td>
 				<?php if ($namespace == NS_MAIN) { ?>
 					<td align=right>
-						<div id="divCompleteTrail" title="Mark Trail Complete" style="background:
-						<?php if ($bTrailFinished) echo "#864422"; else echo "#642200"; ?>">
-							<img id="imgCompleteTrail" src="<?php 
+						<div id="divCompleteTrail" title="Mark Trail Complete">
+							<a id="aCompleteTrail">
+							<img id="imgCompleteTrail" style="cursor:pointer;" src="<?php 
 								if ($bTrailFinished)
 									echo "http://clevertrail.com/images/icons/finished_trail_check.png";
 								else
 									echo "http://clevertrail.com/images/icons/unfinished_trail.png";
 								?>"> 
-							<a id="aCompleteTrail">I've Done This Trail!</a>			
+							</a>			
 						</div>
 						<div id="divCompleteTrailLoading" style="display:none">
 							<img src="http://clevertrail.com/images/load_large.gif"> 
