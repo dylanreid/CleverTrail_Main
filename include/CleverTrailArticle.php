@@ -456,6 +456,21 @@ return $output;
 		return '<span class="clsEmptySectionText">This section is empty, help contribute by clicking the [edit] link!</span>';
 	}
 	
+	public function getMapDataArray() {
+		//create the json string of map marker data
+		$jsonMapDataArray = array ( 'centerLat'=> $this->dGoogleMapCenterLat
+			, 'centerLong' => $this->dGoogleMapCenterLong
+			, 'zoom' => $this->nGoogleMapZoom
+			, 'mapType' => $this->sGoogleMapType
+			, 'markerLats' => $this->arGoogleMapMarkerLats
+			, 'markerLongs' => $this->arGoogleMapMarkerLongs
+			, 'markerDescs' => $this->arGoogleMapMarkerDescriptions
+			, 'markerTypes' => $this->arGoogleMapMarkerTypes
+			);
+		
+		return $jsonMapDataArray;
+	}
+	
 	public function printInfo()
 	{
 				
@@ -624,8 +639,8 @@ return $output;
 				
 				$latLng = explode(",", $markerParts[0]);
 				
-				$cta->arGoogleMapMarkerLats[] = $latLng[0];
-				$cta->arGoogleMapMarkerLongs[] = $latLng[1];
+				$cta->arGoogleMapMarkerLats[] = trim($latLng[0]);
+				$cta->arGoogleMapMarkerLongs[] = trim($latLng[1]);
 				
 				//$title = $markerParts[1];			
 				$description = trim($markerParts[2]);

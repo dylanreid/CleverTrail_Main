@@ -28,9 +28,21 @@ function createJSONResponseFromCTA($name, $cta){
 		$sElevation = $cta->getElevationGainWikitext();
 		$sHighpoint = $cta->getHighPointWikitext();
 		$sLowpoint = $cta->getLowPointWikitext();		
-		$trailUse = $cta->getTrailUseWikitext();
+		$trailUse = $cta->gettrailUseWikitext();
 		$sBestMonth = $cta->getBestMonthWikitext();		
 		$sNearestCity = $cta->sNearestCity;
+		$arMapData = $cta->getMapDataArray();
+		
+		$sHike = (strpos($trailUse, "Hike")) ? "1" : "0";
+		$sBicycle = (strpos($trailUse, "Bicycle")) ? "1" : "0";
+		$sHandicap = (strpos($trailUse, "Handicap")) ? "1" : "0";
+		$sSwim = (strpos($trailUse, "Swim")) ? "1" : "0";
+		$sClimb = (strpos($trailUse, "Climb")) ? "1" : "0";
+		$sHorse = (strpos($trailUse, "Horse")) ? "1" : "0";
+		$sCamp = (strpos($trailUse, "Camp")) ? "1" : "0";
+		$sDog = (strpos($trailUse, "Dog")) ? "1" : "0";
+		$sFish = (strpos($trailUse, "Fish")) ? "1" : "0";
+		$sFamily = (strpos($trailUse, "Family")) ? "1" : "0";
 		
 		$response = array ( 'name'=>$name
 				, 'image' => $sImage
@@ -38,7 +50,16 @@ function createJSONResponseFromCTA($name, $cta){
 				, 'difficulty' => $sDifficulty
 				, 'distance' => $sDistance
 				, 'time' => $sTime
-				, 'trailuse' => $trailUse
+				, 'hike' => $sHike
+				, 'bicycle' => $sBicycle
+				, 'handicap' => $sHandicap
+				, 'swim' => $sSwim
+				, 'climb' => $sClimb
+				, 'horse' => $sHorse
+				, 'camp' => $sCamp
+				, 'dog' => $sDog
+				, 'fish' => $sFish
+				, 'family' => $sFamily
 				, 'trailtype' => $sTrailType
 				, 'elevation' => $sElevation
 				, 'highpoint' => $sHighpoint
@@ -54,6 +75,7 @@ function createJSONResponseFromCTA($name, $cta){
 				, 'misc' => convertClevertextToHTML($cta->sMisc)
 				, 'referencedphotos' => $referencedPhotos
 				, 'galleryphotos' => $galleryPhotos
+				, 'jsonMapdata' => $arMapData
 				);
 	}
 	
@@ -179,6 +201,7 @@ function createReferencedPhotosFromSection($data, $section){
 			$photoPath = getImagePath($data[2][$i], 120);				
 			$photoCaption = "";
 			$photo = array();
+			$photo[] = $photoPath;
 			$photo[] = $photoPath;
 			$photo[] = $photoCaption;
 			$photo[] = $section;

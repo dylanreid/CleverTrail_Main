@@ -78,13 +78,12 @@ class SpecialMassTrailEdit extends SpecialPage {
 				$newtext .= "\n<!--->";			
 			
 			$result = "OK";
-			$summary = "Adding more options for filtering trail maps";
+			$summary = "Adding Nearest City to trail quick facts";
 			$flags = EDIT_UPDATE & EDIT_FORCE_BOT;
 			$user = User::newFromName("CleverTrailBot");
 			$status = NULL;
 			
-			//save the trail through the normal mechanism, mark as saved by CleverTrailBot
-						
+			//save the trail through the normal mechanism, mark as saved by CleverTrailBot						
 			//$status = $trailArticle->doEdit($newtext, $summary, $flags, false, $user);
 			
 			if ($status && !$status->isOK()) {
@@ -93,8 +92,8 @@ class SpecialMassTrailEdit extends SpecialPage {
 			$trailLink = '<a href="' . $wgPathOfWiki .'/' . $a->page_title . '">' . $a->page_title . '</a>';
 			$wgOut->addHTML($trailLink . ": $result<BR>");
 			$numTrailsEdited++;
-			//if ($numTrailsEdited > 1)
-				//break;
+			if ($numTrailsEdited > 1)
+				break;
 		}
 		set_time_limit($executionTime);
 		

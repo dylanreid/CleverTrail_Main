@@ -478,12 +478,19 @@ function updateGoogleMapsMarkersInDatabase($trailTitle, $text) {
 	$timerequired = "";
 	$sImage = "";
 	$trailType = "";
+	$sNearestCity = "";
 	
 	//image name
 	$sImage == "Nophotoavailable.jpg";
 	preg_match_all("/\| ImageName=(.*)/", $text, $data);
 	if (sizeof($data[1]) == 1) {
 		$sImage = trim($data[1][0]);
+	}
+	
+	//nearest city
+	preg_match_all("/\| NearestCity=(.*)/", $text, $data);
+	if (sizeof($data[1]) == 1) {
+		$sNearestCity = trim($data[1][0]);
 	}
 	
 	//find the trail use 
@@ -598,6 +605,7 @@ function updateGoogleMapsMarkersInDatabase($trailTitle, $text) {
 		$dbArray['sTimeRequired'] = $timerequired;
 		$dbArray['sCategories'] = strtoupper(implode(" ", $arCategories));
 		$dbArray['sImage'] = $sImage;
+		$dbArray['sNearestCity'] = $sNearestCity;
 		
 		$arBaseTrailUse = array("Hike", "Bicycle", "Climb", "Handicap", "Horse", "Camp", "Swim", "Dog", "Fish", "Family");
 		//trail use
